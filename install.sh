@@ -13,4 +13,4 @@ if test -n "$HOMEBREW_FORCE_VENDOR_RUBY" || \
    (command -v ruby >/dev/null && ruby -e 'exit RUBY_VERSION.split(".").first(2).join(".").to_f < 2.3'); then
     eval "`curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install-ruby`"
 fi
-exec ruby -e "`curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install`" "$@"
+exec ruby -e "`curl -fsSL https://raw.githubusercontent.com/junderhill/install/master/install`" "$@"
